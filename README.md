@@ -1,6 +1,9 @@
-pip install -r requirements.txt
-python manage.py makemigrations
-python manage.py migrate
-export BOT_TOKEN=TEXT
-python manage.py runserver
+```
+OPEN .env file with
+export BOT_TOKEN=
+export WEBHOOK_URL=
 
+```
+
+
+./_up.sh

@@ -7,6 +7,7 @@ from bot.models import Account
 
 apihelper.ENABLE_MIDDLEWARE = True
 bot = telebot.TeleBot(settings.TOKEN, parse_mode="HTML") 
+bot.set_webhook(url=settings.WEBHOOK_URL)
 
 
 @bot.middleware_handler(update_types=['message'])
